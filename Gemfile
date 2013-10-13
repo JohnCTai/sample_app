@@ -35,8 +35,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-group :development, :test do
-  gem 'rspec-rails', ">= 2.0.0.beta"
+group :development do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'spork', '0.8.4'
 end
 
 # Use ActiveModel has_secure_password
