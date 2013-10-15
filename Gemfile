@@ -41,7 +41,7 @@ end
 
 group :test do
   gem 'rspec-rails'
-  gem 'spork', '0.8.4'
+  # gem 'spork', '0.8.4'
 end
 
 # Use ActiveModel has_secure_password
