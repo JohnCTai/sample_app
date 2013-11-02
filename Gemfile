@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'protected_attributes'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
@@ -42,6 +44,7 @@ end
 
 group :test do
   gem 'rspec-rails'
+  gem 'webrat'
   # gem 'spork', '0.8.4'
 end
 
