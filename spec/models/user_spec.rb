@@ -108,8 +108,18 @@ describe User do
 	end
 
 	describe "with a password that's too short" do
-	  before { @user.password = @user.password_confirmation = "a" * 5 }
+	  before { @user.password = @user.password_confirmation = "a" * 6 }
 	  it { should be_invalid }
+	end
+
+	describe "email address with mixed case" do
+		let(:mixed_case_email) { "Foo@ExAMPle.CoM" }
+
+		it "should be saved as all lower-case" do
+			@user.email = mixed_case_email
+			@user.save
+			expect(@user.reload.email).to eq mixed_case_email.downcase
+		end
 	end
 
 	# pending "add some examples to (or delete) #{__FILE__}"
