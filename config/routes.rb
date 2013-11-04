@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  resources :users
   # get "pages/home"
   # get "pages/contact"
   # get "pages/about"
@@ -10,6 +10,8 @@ SampleApp::Application.routes.draw do
   match '/about',   to: 'pages#about',    via: 'get'
   match '/help',    to: 'pages#help',     via: 'get'
   match '/signup',  to: 'users#new',   via: 'get'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

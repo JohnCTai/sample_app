@@ -8,6 +8,9 @@ gem 'rails', '4.0.0'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '~> 3.0.0'
 
+# Factory Girl
+gem 'factory_girl_rails', '4.2.1'
+
 # Use postgresql as the database for Active Record
 # gem 'pg'
 
@@ -47,7 +50,8 @@ end
 
 group :test do
   gem 'rspec-rails'
-  gem 'webrat'
+  gem 'capybara'
+  # gem 'webrat'
   # gem 'spork', '0.8.4'
 end
 
