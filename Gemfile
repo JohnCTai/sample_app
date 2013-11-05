@@ -46,6 +46,7 @@ end
 group :development do
   gem 'rspec-rails'
   gem "annotate", "~> 2.5.0"
+  gem 'capybara'
 end
 
 group :test do
