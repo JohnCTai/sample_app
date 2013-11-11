@@ -8,8 +8,7 @@ describe "Static pages" do
     before { visit root_path }
 
     it { should have_content('Sample App') }
-    it { should have_title(full_title('')) }
-    it { should_not have_title('| Home') }
+    it { should have_title(full_title('Home')) }
   end
 
   describe "Help page" do
