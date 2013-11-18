@@ -56,6 +56,9 @@ group :test do
   # gem 'spork', '0.8.4'
 end
 
+gem 'faker'
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

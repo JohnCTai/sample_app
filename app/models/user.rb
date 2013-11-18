@@ -22,7 +22,7 @@ class User < ActiveRecord::Base
 			  		  format: { with: VALID_EMAIL_REGEX }, 
 			  		  uniqueness: true
 	has_secure_password
-	validates :password, length: { maximum: 6 }
+	validates :password, length: { maximum: 20 }
 
 	def User.new_remember_token
 		SecureRandom.urlsafe_base64
